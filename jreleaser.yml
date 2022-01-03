@@ -36,6 +36,8 @@ release:
       sort: DESC
       formatted: ALWAYS
       format: '- {{commitShortHash}} {{commitTitle}}'
+      contributors:
+        format: '- {{contributorName}}{{#contributorUsernameAsLink}} ({{.}}){{/contributorUsernameAsLink}}'
       hide:
         contributors:
           - 'GitHub'
