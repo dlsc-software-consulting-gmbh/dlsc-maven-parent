@@ -46,9 +46,9 @@ jobs:
           git config --global user.email "kordamp-release-bot@kordamp.org"
           git config --global user.name "kordamp-release-bot"
           git commit -a -m "Releasing version $VERSION"
-          git push origin master
+          git push origin main
 
-      - name: Release
+      - name: Release to Maven Central
         env:
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.SONATYPE_PASSWORD }}
@@ -59,14 +59,8 @@ jobs:
             -Drepository.url=https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git \
             -Dmaven.site.skip=true -Drelease=true deploy
 
-      - name: Set up Java 11
-        uses: actions/setup-java@v2
-        with:
-          java-version: 11
-          distribution: 'zulu'
-
-      - name: Release
-        uses: jreleaser/release-action@v1
+      - name: Release to GitHub
+        uses: jreleaser/release-action@v2
         env:
           JRELEASER_PROJECT_VERSION: ${{ github.event.inputs.version }}
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
