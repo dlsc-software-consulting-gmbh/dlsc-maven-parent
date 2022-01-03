@@ -24,11 +24,11 @@ project:
     - Dirk Lemmermann
   license: Apache-2.0
   extraProperties:
-    inceptionYear: 2021
+    inceptionYear: 2022
 
 release:
   github:
-    branch: master
+    branch: main
     overwrite: true
     milestone:
       name: '{{projectVersion}}'
