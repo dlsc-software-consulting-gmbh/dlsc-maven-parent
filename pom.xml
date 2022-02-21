@@ -51,7 +51,7 @@
         <version.dependency.plugin>3.1.2</version.dependency.plugin>
         <version.deploy.plugin>3.0.0-M1</version.deploy.plugin>
         <version.directory.plugin>0.3.1</version.directory.plugin>
-        <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
+        <version.enforcer.plugin>3.0.0</version.enforcer.plugin>
         <version.failsafe.plugin>3.0.0-M5</version.failsafe.plugin>
         <version.git.plugin>3.0.1</version.git.plugin>
         <version.gpg.plugin>1.6</version.gpg.plugin>
