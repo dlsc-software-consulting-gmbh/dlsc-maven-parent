@@ -312,18 +312,26 @@
 
     <distributionManagement>
         <repository>
-            <id>ossrh</id>
-            <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
+            <id>github</id>
+            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository</url>
         </repository>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>${nexus.url}/content/repositories/snapshots</url>
+            <id>github</id>
+            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository/snapshots</url>
         </snapshotRepository>
         <site>
-            <id>kordamp</id>
+            <id>dlsc</id>
             <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>
         </site>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Apache Maven Packages</name>
+            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository</url>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
@@ -443,6 +451,20 @@
                     </plugin>
                 </plugins>
             </build>
+            <distributionManagement>
+                <repository>
+                    <id>ossrh</id>
+                    <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>ossrh</id>
+                    <url>${nexus.url}/content/repositories/snapshots</url>
+                </snapshotRepository>
+                <site>
+                    <id>kordamp</id>
+                    <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>
+                </site>
+            </distributionManagement>
         </profile>
 
         <profile>
