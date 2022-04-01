@@ -29,7 +29,5 @@ jobs:
           distribution: 'zulu'
 
       - name: Build
-        run: ./mvnw --no-transfer-progress -B --file pom.xml deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: ./mvnw --no-transfer-progress -B --file pom.xml verify
 

@@ -313,11 +313,11 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository</url>
+            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository</url>
         </repository>
         <snapshotRepository>
             <id>github</id>
-            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository/snapshots</url>
+            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository/snapshots</url>
         </snapshotRepository>
         <site>
             <id>dlsc</id>
@@ -329,7 +329,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://github.com/dlsc-software-consulting-gmbh/maven-repository</url>
+            <url>https:/maven.pkg.github.com/dlsc-software-consulting-gmbh/repository</url>
         </repository>
     </repositories>
 
