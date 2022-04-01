@@ -30,4 +30,3 @@ jobs:
 
       - name: Build
         run: ./mvnw --no-transfer-progress -B --file pom.xml verify
-

@@ -25,7 +25,7 @@
 
     <groupId>com.dlsc</groupId>
     <artifactId>dlsc-maven-parent</artifactId>
-    <version>1.3.0</version>
+    <version>1.2.0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -310,17 +310,32 @@
         </plugins>
     </build>
 
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>github</id>-->
+<!--            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>github</id>-->
+<!--            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository/snapshots</url>-->
+<!--        </snapshotRepository>-->
+<!--        <site>-->
+<!--            <id>dlsc</id>-->
+<!--            <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>-->
+<!--        </site>-->
+<!--    </distributionManagement>-->
+
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository</url>
+            <id>ossrh</id>
+            <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/dlsc-software-consulting-gmbh/repository/snapshots</url>
+            <id>ossrh</id>
+            <url>${nexus.url}/content/repositories/snapshots</url>
         </snapshotRepository>
         <site>
-            <id>dlsc</id>
+            <id>kordamp</id>
             <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>
         </site>
     </distributionManagement>
@@ -451,20 +466,6 @@
                     </plugin>
                 </plugins>
             </build>
-            <distributionManagement>
-                <repository>
-                    <id>ossrh</id>
-                    <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
-                </repository>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>${nexus.url}/content/repositories/snapshots</url>
-                </snapshotRepository>
-                <site>
-                    <id>kordamp</id>
-                    <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>
-                </site>
-            </distributionManagement>
         </profile>
 
         <profile>
