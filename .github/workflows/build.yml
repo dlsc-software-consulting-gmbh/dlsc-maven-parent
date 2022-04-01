@@ -31,5 +31,5 @@ jobs:
       - name: Build
         run: ./mvnw --no-transfer-progress -B --file pom.xml deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
