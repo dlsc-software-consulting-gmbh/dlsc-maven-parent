@@ -1,7 +1,7 @@
 = dlsc-maven-parent
 :project-owner:      dlsc-software-consulting-gmbh
 :project-name:       dlsc-maven-parent
-:project-groupId:    org.dlsc
+:project-groupId:    com.dlsc
 :project-artifactId: dlsc-maven-parent
 :project-version: 1.2.0
 
