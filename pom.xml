@@ -43,29 +43,29 @@
         <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.version>3.8.4</maven.version>
+        <maven.version>3.9.7</maven.version>
         <nexus.url>https://oss.sonatype.org</nexus.url>
         <repository.url>git@github.com:${project.github.repository}.git</repository.url>
-        <version.antrun.plugin>3.0.0</version.antrun.plugin>
-        <version.clean.plugin>3.1.0</version.clean.plugin>
-        <version.compiler.plugin>3.10.1</version.compiler.plugin>
-        <version.dependency.plugin>3.1.2</version.dependency.plugin>
-        <version.deploy.plugin>3.0.0-M1</version.deploy.plugin>
-        <version.directory.plugin>0.3.1</version.directory.plugin>
-        <version.enforcer.plugin>3.4.1</version.enforcer.plugin>
-        <version.failsafe.plugin>3.0.0-M5</version.failsafe.plugin>
-        <version.git.plugin>3.0.1</version.git.plugin>
-        <version.gpg.plugin>1.6</version.gpg.plugin>
-        <version.install.plugin>3.0.0-M1</version.install.plugin>
-        <version.javadoc.plugin>3.2.0</version.javadoc.plugin>
-        <version.jar.plugin>3.1.2</version.jar.plugin>
-        <version.jreleaser.plugin>0.8.0</version.jreleaser.plugin>
-        <version.nexus.plugin>1.6.8</version.nexus.plugin>
-        <version.resources.plugin>3.1.0</version.resources.plugin>
-        <version.site.plugin>3.7.1</version.site.plugin>
-        <version.source.plugin>3.2.1</version.source.plugin>
-        <version.surefire.plugin>3.0.0-M4</version.surefire.plugin>
-        <version.versions.plugin>2.8.1</version.versions.plugin>
+        <version.antrun.plugin>3.1.0</version.antrun.plugin>
+        <version.clean.plugin>3.3.2</version.clean.plugin>
+        <version.compiler.plugin>3.13.0</version.compiler.plugin>
+        <version.dependency.plugin>3.6.1</version.dependency.plugin>
+        <version.deploy.plugin>3.1.2</version.deploy.plugin>
+        <version.directory.plugin>1.0</version.directory.plugin>
+        <version.enforcer.plugin>3.5.0</version.enforcer.plugin>
+        <version.failsafe.plugin>3.2.5</version.failsafe.plugin>
+        <version.git.plugin>4.9.10</version.git.plugin>
+        <version.gpg.plugin>3.2.4</version.gpg.plugin>
+        <version.install.plugin>3.1.2</version.install.plugin>
+        <version.javadoc.plugin>3.7.0</version.javadoc.plugin>
+        <version.jar.plugin>3.4.1</version.jar.plugin>
+        <version.jreleaser.plugin>1.12.0</version.jreleaser.plugin>
+        <version.nexus.plugin>1.7.0</version.nexus.plugin>
+        <version.resources.plugin>3.3.1</version.resources.plugin>
+        <version.site.plugin>3.12.1</version.site.plugin>
+        <version.source.plugin>3.3.1</version.source.plugin>
+        <version.surefire.plugin>3.2.5</version.surefire.plugin>
+        <version.versions.plugin>2.16.2</version.versions.plugin>
     </properties>
 
     <name>dlsc-maven-parent</name>
