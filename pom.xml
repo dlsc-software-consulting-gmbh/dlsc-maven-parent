@@ -320,14 +320,6 @@
 <!--    </distributionManagement>-->
 
     <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <url>${nexus.url}/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>${nexus.url}/content/repositories/snapshots</url>
-        </snapshotRepository>
         <site>
             <id>kordamp</id>
             <url>scm:git:ssh://git@github.com/${project.github.repository}.git</url>
